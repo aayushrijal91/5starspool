@@ -49,6 +49,33 @@ include __DIR__ . '/header.php';
     </div>
 
     <div class="banner">
+        <div class="container">
+            <div class="row pb-4">
+                <div class="col-lg-5">
+                    <div class="based-in-sydney">Are you based in Sydney?</div>
+                </div>
+                <div class="col-auto">
+                    <a href="" class="btn text-tertiary-dark letter-spacing-03 fw-700 h3 get-quote-btn">Get a quote!</a>
+                </div>
+            </div>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-auto">
+                    <?= renderImg("detail-badge.png", "lib") ?>
+                </div>
+                <div class="col-auto">
+                    <?= renderImg("experience-badge.png", "lib") ?>
+                </div>
+                <div class="col-auto">
+                    <?= renderImg("view-more.png", "lib") ?>
+                </div>
+                <div class="col-auto">
+                    <?= renderImg("australian-business.png", "lib") ?>
+                </div>
+                <div class="col-auto">
+                    <?= renderImg("master-builders.png", "lib") ?>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 
