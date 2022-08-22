@@ -60,23 +60,119 @@ include __DIR__ . '/header.php';
             </div>
             <div class="row justify-content-between align-items-center">
                 <div class="col-auto">
-                    <?= renderImg("detail-badge.png", "lib") ?>
+                    <?= renderImg("detail-badge.png", "lib", "badge-btn") ?>
                 </div>
                 <div class="col-auto">
-                    <?= renderImg("experience-badge.png", "lib") ?>
+                    <?= renderImg("experience-badge.png", "lib", "badge-btn") ?>
                 </div>
                 <div class="col-auto">
                     <?= renderImg("view-more.png", "lib") ?>
                 </div>
                 <div class="col-auto">
-                    <?= renderImg("australian-business.png", "lib") ?>
+                    <?= renderImg("australian-business.png", "lib", "badge-btn") ?>
                 </div>
                 <div class="col-auto">
-                    <?= renderImg("master-builders.png", "lib") ?>
+                    <?= renderImg("master-builders.png", "lib", "badge-btn") ?>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
+<section class="about">
+    <div class="container">
+        <div class="row gx-xxl-6 align-items-center align-items-xxl-start position-relative">
+            <div class="col-7">
+                <?= renderImg("play-btn.png", "icons", "play-btn-xxl") ?>
+
+                <div class="laptop d-xxl-none">
+                    <?= renderImg("laptop.png", "lib") ?>
+                    <?= renderImg("play-btn.png", "icons", "play-btn") ?>
+                </div>
+            </div>
+            <div class="col-5 py-xxl-10">
+                <h1 class="text-primary text-uppercase fw-800">Only the best</h1>
+                <div class="h6 text-dark letter-spacing-01 fw-500 font-gilroy py-4 pe-xxl-7">
+                    We are passionate about making your tailored ideas a reality. This means we’re flexible, transparent and direct with our communication, working with you around the clock, and following up your every need.
+                </div>
+                <div class="row gx-3 pt-3">
+                    <div class="col-5">
+                        <a href="#form" class="btn btn-dark-grey text-white rounded-0 h6 d-block py-3 font-gilroy fw-500">Get a quote</a>
+                    </div>
+                    <div class="col-5">
+                        <a href="#form" class="btn bordered border-dark-grey text-dark-grey rounded-0 h6 d-block py-3 font-gilroy fw-600">Give us a call</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="cta">
+                    <?= renderImg("consultation.png", "icons") ?>
+                    <h4 class="text-primary pt-4">Free Onsite Consultations</h4>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="cta">
+                    <?= renderImg("assurance.png", "icons") ?>
+                    <h4 class="text-primary pt-4">Unbeatable Quality Assurance</h4>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="cta">
+                    <?= renderImg("get-started.png", "icons") ?>
+                    <h4 class="text-primary pt-4">Ready To Get Started? Book a consult now</h4>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <?= renderImg("stars.png", "icons") ?>
+            <h1 class="text-uppercase fw-800 text-white py-3 letter-spacing-03">Explore our 5 star services</h1>
+            <div class="row pt-4">
+                <div class="col-xxl-6">
+                    <div class="h6 letter-spacing-01 text-white font-gilroy fw-500 line-height-2">We are passionate about making your tailored ideas a reality. This means we’re flexible, transparent and direct with our communication, working with you around the clock, and following up your every need.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="service-slider">
+        <?php
+        $services = ["Family style", "Retreat style", "Pool With Spa", "Lap Pools", "Pool With<br> Waterfall", "Infinity Edge<br>Pool", "Plunge Pool", "Above Ground"];
+
+        foreach ($services as $key => $service) {
+            $key = $key + 1;
+        ?>
+            <div class="service-slider-content">
+                <?= renderImg("service-" . $key . ".png", "lib", "w-100") ?>
+                <div class="title">
+                    <div class="h7 letter-spacing-01 fw-700 font-gilroy text-white pb-1">Types of pools</div>
+                    <h2 class="text-primary fw-800 letter-spacing-03 text-uppercase <?= ($key == 5 || $key == 6) ? "pb-2" : "pb-5" ?>"><?= $service ?></h2>
+                    <a href="#form" class="btn btn-primary text-uppercase text-white letter-spacing-02 fw-700 h6 px-4">Get a Quote</a>
+                </div>
+            </div>
+        <?php
+        }
+        ?>
+    </div>
+</section>
+
+<section class="gallery">
+    <div class="container">
+        <h1 class="letter-spacing-03 fw-800 text-uppercase text-primary pb-8">Pool Construction Gallery</h1>
+        <div class="row g-4">
+            <div class="col-4"><?= renderImg("gallery-1.jpg", "lib") ?></div>
+            <div class="col-4"><?= renderImg("gallery-2.jpg", "lib") ?></div>
+            <div class="col-4"><?= renderImg("gallery-3.jpg", "lib") ?></div>
+            <div class="col-4"><?= renderImg("gallery-4.jpg", "lib") ?></div>
+            <div class="col-4"><?= renderImg("gallery-5.jpg", "lib") ?></div>
+            <div class="col-4"><?= renderImg("gallery-6.jpg", "lib") ?></div>
+            <div class="col-4"><?= renderImg("gallery-7.jpg", "lib") ?></div>
+            <div class="col-4"><?= renderImg("gallery-8.jpg", "lib") ?></div>
+            <div class="col-4"><?= renderImg("gallery-9.jpg", "lib") ?></div>
+        </div>
+    </div>
+</section>
 <?php include __DIR__ . '/footer.php'; ?>

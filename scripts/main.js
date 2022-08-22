@@ -23,3 +23,18 @@ $('#return-to-top').on('click', () => {
         scrollTop: 0
     }, 500);
 });
+
+$(() => {
+    $('.service-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "60px",
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 2000,
+        cssEase: "linear",
+        infinite: true,
+        dots: true,
+    });
+})
