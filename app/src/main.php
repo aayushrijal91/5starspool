@@ -6,13 +6,13 @@ include __DIR__ . '/header.php';
 <header>
     <div class="header-top-bar">
         <div class="container-fluid px-xl-0">
-            <div class="row justify-content-center justify-content-lg-between align-items-center">
+            <div class="row justify-content-center justify-content-md-between align-items-center">
                 <div class="col-12 col-md-auto col-xl-3 bg-white text-center">
                     <a href="./">
                         <?= renderImg("logo.png", "logo", "py-4") ?>
                     </a>
                 </div>
-                <div class="col-12 col-md-auto">
+                <div class="col-12 col-md-auto pe-md-0">
                     <div class="row justify-content-center justify-content-lg-end align-items-center gx-0 gy-2 py-2">
                         <div class="col-auto pe-1 px-md-1">
                             <a href="#form" class="btn btn-tertiary rounded-0 text-white py-2 h6 py-md-3 px-md-4">
@@ -37,7 +37,7 @@ include __DIR__ . '/header.php';
                                 <div class="ps-2"><?= $phone_number ?></div>
                             </a>
                         </div>
-                        <div class="col-12 col-md-auto">
+                        <div class="col-12 col-md-auto d-md-none d-lg-block">
                             <a href="" class="btn d-block btn-tertiary rounded-0 text-white py-2 h6 py-md-3 px-md-4">
                                 Click here to view 5 Star Granny Flats
                             </a>
@@ -65,7 +65,7 @@ include __DIR__ . '/header.php';
                 <div class="col-6 col-md-auto">
                     <?= renderImg("experience-badge.png", "lib", "badge-btn") ?>
                 </div>
-                <div class="col-auto d-none d-md-block">
+                <div class="col-auto d-none d-lg-block">
                     <?= renderImg("view-more.png", "lib") ?>
                 </div>
                 <div class="col-6 col-md-auto">
@@ -82,7 +82,7 @@ include __DIR__ . '/header.php';
 <section class="about">
     <div class="container">
         <div class="row gx-xxl-6 align-items-center align-items-xxl-start position-relative">
-            <div class="col-md-7">
+            <div class="col-lg-7">
                 <?= renderImg("play-btn.png", "icons", "play-btn-xxl") ?>
 
                 <div class="laptop d-xxl-none">
@@ -90,12 +90,12 @@ include __DIR__ . '/header.php';
                     <?= renderImg("play-btn.png", "icons", "play-btn") ?>
                 </div>
             </div>
-            <div class="col-md-5 py-xxl-10">
+            <div class="col-lg-5 py-xxl-10">
                 <h1 class="heroHeading">Only the best</h1>
-                <div class="h6 text-dark letter-spacing-01 fw-500 font-gilroy py-4 pe-xxl-7 text-center text-md-start">
+                <div class="h6 text-dark letter-spacing-01 fw-500 font-gilroy py-4 pe-xxl-7 text-center text-lg-start">
                     We are passionate about making your tailored ideas a reality. This means we’re flexible, transparent and direct with our communication, working with you around the clock, and following up your every need.
                 </div>
-                <div class="row gx-3 pt-3 justify-content-center justify-content-md-start">
+                <div class="row gx-3 pt-3 justify-content-center justify-content-lg-start">
                     <div class="col-5">
                         <a href="#form" class="btn btn-dark-grey text-white rounded-0 h6 d-block py-2 py-md-3 font-gilroy fw-500">Get a quote</a>
                     </div>
@@ -105,7 +105,7 @@ include __DIR__ . '/header.php';
                 </div>
             </div>
         </div>
-        <div class="row pt-5 pt-md-0 gy-4">
+        <div class="row pt-5 pt-lg-0 gy-4">
             <div class="col-md-4">
                 <div class="cta">
                     <?= renderImg("consultation.png", "icons") ?>
@@ -127,7 +127,7 @@ include __DIR__ . '/header.php';
         </div>
         <div class="description">
             <div class="row">
-                <div class="col-6 col-md-auto">
+                <div class="col-6 col-md-5 col-lg-auto">
                     <?= renderImg("stars.png", "icons") ?>
                 </div>
                 <div class="col-12">
@@ -167,33 +167,33 @@ include __DIR__ . '/header.php';
     <div class="container">
         <h1 class="letter-spacing-03 fw-800 text-uppercase text-primary pb-5 pb-md-8">Pool Construction Gallery</h1>
         <div class="row justify-content-center g-2 g-md-4">
-            <div class="col-6 col-md-4"><?= renderImg("gallery-1.jpg", "lib") ?></div>
-            <div class="col-6 col-md-4"><?= renderImg("gallery-2.jpg", "lib") ?></div>
-            <div class="col-6 col-md-4"><?= renderImg("gallery-3.jpg", "lib") ?></div>
-            <div class="col-6 col-md-4"><?= renderImg("gallery-4.jpg", "lib") ?></div>
-            <div class="col-6 col-md-4"><?= renderImg("gallery-5.jpg", "lib") ?></div>
-            <div class="col-6 col-md-4"><?= renderImg("gallery-6.jpg", "lib") ?></div>
-            <div class="col-6 col-md-4"><?= renderImg("gallery-7.jpg", "lib") ?></div>
-            <div class="col-6 col-md-4"><?= renderImg("gallery-8.jpg", "lib") ?></div>
-            <div class="col-6 col-md-4"><?= renderImg("gallery-9.jpg", "lib") ?></div>
+            <div class="col-6 col-lg-4"><?= renderImg("gallery-1.jpg", "lib") ?></div>
+            <div class="col-6 col-lg-4"><?= renderImg("gallery-2.jpg", "lib") ?></div>
+            <div class="col-6 col-lg-4"><?= renderImg("gallery-3.jpg", "lib") ?></div>
+            <div class="col-6 col-lg-4"><?= renderImg("gallery-4.jpg", "lib") ?></div>
+            <div class="col-6 col-lg-4"><?= renderImg("gallery-5.jpg", "lib") ?></div>
+            <div class="col-6 col-lg-4"><?= renderImg("gallery-6.jpg", "lib") ?></div>
+            <div class="col-6 col-lg-4"><?= renderImg("gallery-7.jpg", "lib") ?></div>
+            <div class="col-6 col-lg-4"><?= renderImg("gallery-8.jpg", "lib") ?></div>
+            <div class="col-6 col-lg-4"><?= renderImg("gallery-9.jpg", "lib") ?></div>
         </div>
     </div>
 </section>
 
 <section class="guarantee">
     <div class="container">
-        <div class="row justify-content-around gy-5">
-            <div class="col-md-3 text-center">
+        <div class="row justify-content-around gy-5 gy-md-0">
+            <div class="col-md-4 col-lg-3 text-center">
                 <?= renderImg("certified.png", "icons") ?>
                 <h1 class="text-white fw-800 py-3">100%</h1>
                 <div class="text-white h6 letter-spacing-01">satisfaction guarantee, using only Australian made products.</div>
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-md-4 col-lg-3 text-center">
                 <?= renderImg("calendar.png", "icons") ?>
                 <h1 class="text-white fw-800 py-3 text-uppercase">15 Years</h1>
                 <div class="text-white h6 letter-spacing-01">First established as a small family business we are now one of the youngest and fastest growing builders in NSW</div>
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-md-4 col-lg-3 text-center">
                 <?= renderImg("helmet.png", "icons") ?>
                 <h1 class="text-white fw-800 py-3 text-uppercase">Over 50</h1>
                 <div class="text-white h6 letter-spacing-01">Our dedicated team produce the highest quality finishes on all projects finalising over 50 builds a year.</div>
@@ -351,7 +351,7 @@ include __DIR__ . '/header.php';
             </div>
         </div>
         <div class="row justify-content-center justify-content-md-between pt-5 gy-5">
-            <div class="col-6 col-md-auto">
+            <div class="col-6 col-md col-lg-auto">
                 <div class="star-wrapper">
                     <div><?= renderImg("star-top.png", "icons") ?></div>
                     <?= renderImg("commitment.png", "icons", "floating-img") ?>
@@ -359,7 +359,7 @@ include __DIR__ . '/header.php';
                 </div>
                 <h4>Commitment</h4>
             </div>
-            <div class="col-6 col-md-auto">
+            <div class="col-6 col-md col-lg-auto">
                 <div class="star-wrapper">
                     <div><?= renderImg("star-top.png", "icons") ?></div>
                     <?= renderImg("professionalism.png", "icons", "floating-img") ?>
@@ -367,7 +367,7 @@ include __DIR__ . '/header.php';
                 </div>
                 <h4>Professionalism</h4>
             </div>
-            <div class="col-6 col-md-auto">
+            <div class="col-6 col-md col-lg-auto">
                 <div class="star-wrapper">
                     <div><?= renderImg("star-top.png", "icons") ?></div>
                     <?= renderImg("transparency.png", "icons", "floating-img") ?>
@@ -375,7 +375,7 @@ include __DIR__ . '/header.php';
                 </div>
                 <h4>Transparency</h4>
             </div>
-            <div class="col-6 col-md-auto">
+            <div class="col-6 col-md col-lg-auto">
                 <div class="star-wrapper">
                     <div><?= renderImg("star-top.png", "icons") ?></div>
                     <?= renderImg("seamless-delivery.png", "icons", "floating-img") ?>
@@ -383,7 +383,7 @@ include __DIR__ . '/header.php';
                 </div>
                 <h4>Seamless Delivery</h4>
             </div>
-            <div class="col-6 col-md-auto">
+            <div class="col-6 col-md col-lg-auto">
                 <div class="star-wrapper">
                     <div><?= renderImg("star-top.png", "icons") ?></div>
                     <?= renderImg("close-contact.png", "icons", "floating-img") ?>

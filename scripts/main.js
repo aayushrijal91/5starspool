@@ -45,11 +45,17 @@ $(() => {
                 }
             },
             {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                    centerPadding: "10px",
+                    dots: false,
+                }
+            },
+            {
                 breakpoint: 540,
                 settings: {
                     slidesToShow: 1,
-                    centerPadding: "10px",
-                    dots: false,
                 }
             }]
     });
