@@ -175,4 +175,167 @@ include __DIR__ . '/header.php';
         </div>
     </div>
 </section>
+
+<section class="guarantee">
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-3 text-center">
+                <?= renderImg("certified.png", "icons") ?>
+                <h1 class="text-white fw-800 py-3">100%</h1>
+                <div class="text-white h6 letter-spacing-01">satisfaction guarantee, using only Australian made products.</div>
+            </div>
+            <div class="col-3 text-center">
+                <?= renderImg("calendar.png", "icons") ?>
+                <h1 class="text-white fw-800 py-3 text-uppercase">15 Years</h1>
+                <div class="text-white h6 letter-spacing-01">First established as a small family business we are now one of the youngest and fastest growing builders in NSW</div>
+            </div>
+            <div class="col-3 text-center">
+                <?= renderImg("helmet.png", "icons") ?>
+                <h1 class="text-white fw-800 py-3 text-uppercase">Over 50</h1>
+                <div class="text-white h6 letter-spacing-01">Our dedicated team produce the highest quality finishes on all projects finalising over 50 builds a year.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="form" id="form">
+    <div class="container">
+        <h1 class="text-primary fw-800 text-uppercase text-center letter-spacing-03 pb-3">Ready to get Started?</h1>
+        <div class="h6 text-center text-dark font-gilroy letter-spacing-01 fw-500 py-4">Contact one of our friendly staff to guide you through our simple process and organise a free onsite visit with our experienced builders.</div>
+        <form action="./src/form" method="POST" class="pt-6">
+            <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 class="text-primary font-gilroy fw-500 letter-spacing-01 pb-4">Select from the following</h4>
+                    <div class="row gy-4">
+                        <div class="col-12">
+                            <label class="form-label">Please Choose What You're After</label>
+                            <div class="row radio-toolbar g-0">
+                                <div class="col">
+                                    <input class="form-check-input" type="radio" name="poolType" value="Lap Pool" id="lapPool" checked>
+                                    <label class="form-check-label" for="lapPool">
+                                        <div class="radio-img"><?= renderImg("lap-pool.png", "icons") ?></div>
+                                        <div>Lap Pool</div>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <input class="form-check-input" type="radio" name="poolType" value="Plunge Pool" id="plungePool">
+                                    <label class="form-check-label" for="plungePool">
+                                        <div class="radio-img"><?= renderImg("plunge-pool.png", "icons") ?></div>
+                                        <div>Plunge Pool</div>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <input class="form-check-input" type="radio" name="poolType" value="Infinity Pool" id="infinityPool">
+                                    <label class="form-check-label" for="infinityPool">
+                                        <div class="radio-img"><?= renderImg("infinity-pool.png", "icons") ?></div>
+                                        <div>Infinity Pool</div>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <input class="form-check-input" type="radio" name="poolType" value="Architectural Pool" id="architecturalPool">
+                                    <label class="form-check-label" for="architecturalPool">
+                                        <div class="radio-img"><?= renderImg("architectural-pool.png", "icons") ?></div>
+                                        <div>Architectural Pool</div>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <input class="form-check-input" type="radio" name="poolType" value="Indoor Pool" id="indoorPool">
+                                    <label class="form-check-label" for="indoorPool">
+                                        <div class="radio-img"><?= renderImg("indoor-pool.png", "icons") ?></div>
+                                        <div>Indoor Pool</div>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <input class="form-check-input" type="radio" name="poolType" value="In-Ground Pool" id="ingroundPool">
+                                    <label class="form-check-label" for="ingroundPool">
+                                        <div class="radio-img"><?= renderImg("in-ground-pool.png", "icons") ?></div>
+                                        <div>In-Ground Pool</div>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <input class="form-check-input" type="radio" name="poolType" value="Above Ground Pool" id="aboveGroundPool">
+                                    <label class="form-check-label" for="aboveGroundPool">
+                                        <div class="radio-img"><?= renderImg("above-ground-pool.png", "icons") ?></div>
+                                        <div>Above Ground Pool</div>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <input class="form-check-input" type="radio" name="poolType" value="others" id="othersPool">
+                                    <label class="form-check-label" for="othersPool">
+                                        <div class="radio-img"><?= renderImg("others.png", "icons") ?></div>
+                                        <div>Others</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="comment">Services Required (please list below)</label>
+                            <textarea name="comment" id="comment" rows="7" class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="text-primary font-gilroy fw-500 letter-spacing-01 pb-4">Please fill in your information</h4>
+                    <div class="row gy-4 align-items-end">
+                        <div class="col-lg-6">
+                            <label class="form-label" for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="phone">Phone Number</label>
+                            <input type="phone" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="col-lg-5">
+                            <label class="form-label" for="street">Street</label>
+                            <input type="text" class="form-control" id="street" name="street" required>
+                        </div>
+                        <div class="col-lg-3">
+                            <label class="form-label" for="suburb">Suburb</label>
+                            <input type="text" class="form-control" id="suburb" name="suburb" required>
+                        </div>
+                        <div class="col-lg-2">
+                            <label class="form-label" for="postcode">Post Code</label>
+                            <input type="number" class="form-control" id="postcode" name="postcode" required>
+                        </div>
+                        <div class="col-lg-2">
+                            <label class="form-label" for="state">State</label>
+                            <select class="form-control" name="state" id="state" required>
+                                <option selected>NSW</option>
+                                <option>South Australia</option>
+                                <option>Western Australia</option>
+                                <option>Queensland</option>
+                                <option>Victoria</option>
+                                <option>ACT</option>
+                                <option>Northern Territory</option>
+                                <option>Tasmania</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-auto">
+                            <label class="form-label" for="state">How did you hear about us?</label>
+                            <select class="form-control" name="state" id="state" required>
+                                <option selected>Internet</option>
+                                <option>Word of Mouth</option>
+                                <option>Internet</option>
+                                <option>Advertisement</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <button class="btn" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
 <?php include __DIR__ . '/footer.php'; ?>
