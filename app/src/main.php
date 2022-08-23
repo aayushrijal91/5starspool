@@ -265,7 +265,7 @@ include __DIR__ . '/header.php';
                                     </label>
                                 </div>
                                 <div class="col-3 col-md col-lg-3 col-xl">
-                                    <input class="form-check-input" type="radio" name="poolType" value="others" id="othersPool">
+                                    <input class="form-check-input" type="radio" name="poolType" value="Others" id="othersPool">
                                     <label class="form-check-label" for="othersPool">
                                         <div class="radio-img"><?= renderImg("others.png", "icons") ?></div>
                                         <div>Others</div>
@@ -275,7 +275,7 @@ include __DIR__ . '/header.php';
                         </div>
                         <div class="col-12">
                             <label class="form-label" for="comment">Services Required (please list below)</label>
-                            <textarea name="comment" id="comment" rows="7" class="form-control"></textarea>
+                            <textarea name="comment" id="comment" rows="6" class="form-control"></textarea>
                         </div>
                     </div>
                 </div>
@@ -313,23 +313,26 @@ include __DIR__ . '/header.php';
                         <div class="col-4 col-lg-2">
                             <label class="form-label" for="state">State</label>
                             <select class="form-control" name="state" id="state" required>
-                                <option selected>NSW</option>
-                                <option>South Australia</option>
-                                <option>Western Australia</option>
-                                <option>Queensland</option>
-                                <option>Victoria</option>
+                                <option selected disabled></option>
                                 <option>ACT</option>
-                                <option>Northern Territory</option>
-                                <option>Tasmania</option>
+                                <option>NSW</option>
+                                <option>NT</option>
+                                <option>QLD</option>
+                                <option>SA</option>
+                                <option>TAS</option>
+                                <option>VIC</option>
+                                <option>WA</option>
                             </select>
                         </div>
                         <div class="col-lg-auto">
-                            <label class="form-label" for="state">How did you hear about us?</label>
-                            <select class="form-control" name="state" id="state" required>
-                                <option selected>Internet</option>
+                            <label class="form-label" for="hearAboutUs">How did you hear about us?</label>
+                            <select class="form-control" name="hearAboutUs" id="hearAboutUs" required>
+                                <option selected disabled></option>
                                 <option>Word of Mouth</option>
-                                <option>Internet</option>
-                                <option>Advertisement</option>
+                                <option>Google</option>
+                                <option>Signs</option>
+                                <option>Social Media</option>
+                                <option>Others</option>
                             </select>
                         </div>
                         <div class="col">
@@ -398,9 +401,9 @@ include __DIR__ . '/header.php';
 <section class="other-services">
     <div class="container">
         <div class="row justify-content-between">
-            <div class="col col-md-auto"><?= renderImg("5-star-pools.png","logo") ?></div>
-            <div class="col col-md-auto"><?= renderImg("5-star-builders.png","logo") ?></div>
-            <div class="col col-md-auto"><?= renderImg("5-star-granny-flat.png","logo") ?></div>
+            <div class="col col-md-auto"><?= renderImg("5-star-pools.png", "logo") ?></div>
+            <div class="col col-md-auto"><?= renderImg("5-star-builders.png", "logo") ?></div>
+            <div class="col col-md-auto"><?= renderImg("5-star-granny-flat.png", "logo") ?></div>
         </div>
     </div>
 </section>

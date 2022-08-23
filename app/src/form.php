@@ -17,9 +17,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
 
         $subject = "Message from " . $site;
 
-        $name = $_POST['name'];
-        $phone = $_POST['phone'];
+        $poolType = $_POST['poolType'];
+        $comment = $_POST['comment'];
+        $firstName = $_POST['firstName'];
+        $lastName = $_POST['lastName'];
         $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $street = $_POST['street'];
+        $suburb = $_POST['suburb'];
+        $postcode = $_POST['postcode'];
+        $state = $_POST['state'];
+        $hearAboutUs = $_POST['hearAboutUs'];
+
         $message = $_POST['message'];
 
         $message = '<!DOCTYPE html>
@@ -46,19 +55,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
                 <body><table><tbody>' .
             '<tr>' .
             '<td>Name</td>' .
-            '<td><b>' . strip_tags($name) . '</b></td>' .
-            '</tr>' .
-            '<tr>' .
-            '<td>Phone</td>' .
-            '<td><b>' . strip_tags($phone) . '</b></td>' .
+            '<td><b>' . strip_tags($firstName) . " " . strip_tags($lastName) . '</b></td>' .
             '</tr>' .
             '<tr>' .
             '<td>Email Address</td>' .
             '<td><b>' . strip_tags($email) . '</b></td>' .
             '</tr>' .
             '<tr>' .
-            '<td>Message</td>' .
-            '<td><b>' . strip_tags($message) . '</b></td>' .
+            '<td>Phone</td>' .
+            '<td><b>' . strip_tags($phone) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Address</td>' .
+            '<td><b>' . strip_tags($street) . ", " . strip_tags($suburb) . ", " . strip_tags($postcode) . ", " . strip_tags($state) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Type of Pool</td>' .
+            '<td><b>' . strip_tags($poolType) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Service Required</td>' .
+            '<td><b>' . strip_tags($comment) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>How did you hear about us?</td>' .
+            '<td><b>' . strip_tags($hearAboutUs) . '</b></td>' .
             '</tr>' .
             '</tbody></table></body></html>';
 
