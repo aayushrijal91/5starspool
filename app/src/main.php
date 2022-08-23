@@ -133,7 +133,7 @@ include __DIR__ . '/header.php';
                 <div class="col-12">
                     <h1 class="text-uppercase fw-800 text-white py-3 letter-spacing-03">Explore our 5 star services</h1>
                 </div>
-                <div class="col-xxl-6 pt-3 pt-md-4">
+                <div class="col-xl-6 pt-3 pt-md-4">
                     <div class="h6 letter-spacing-01 text-white font-gilroy fw-500 line-height-2">We are passionate about making your tailored ideas a reality. This means we’re flexible, transparent and direct with our communication, working with you around the clock, and following up your every need.</div>
                 </div>
             </div>

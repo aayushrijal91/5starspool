@@ -39,6 +39,12 @@ $(() => {
         arrows: false,
         responsive: [
             {
+                breakpoint: 1540,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
                 breakpoint: 540,
                 settings: {
                     slidesToShow: 1,
