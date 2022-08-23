@@ -218,56 +218,56 @@ include __DIR__ . '/header.php';
                                 <div class="col-3 col-md col-lg-3 col-xl">
                                     <input class="form-check-input" type="radio" name="poolType" value="Lap Pool" id="lapPool" checked>
                                     <label class="form-check-label" for="lapPool">
-                                        <div class="radio-img"><?= renderImg("lap-pool.png", "icons") ?></div>
+                                        <div class="radio-img lap-pool"></div>
                                         <div>Lap Pool</div>
                                     </label>
                                 </div>
                                 <div class="col-3 col-md col-lg-3 col-xl">
                                     <input class="form-check-input" type="radio" name="poolType" value="Plunge Pool" id="plungePool">
                                     <label class="form-check-label" for="plungePool">
-                                        <div class="radio-img"><?= renderImg("plunge-pool.png", "icons") ?></div>
+                                        <div class="radio-img plunge-pool"></div>
                                         <div>Plunge Pool</div>
                                     </label>
                                 </div>
                                 <div class="col-3 col-md col-lg-3 col-xl">
                                     <input class="form-check-input" type="radio" name="poolType" value="Infinity Pool" id="infinityPool">
                                     <label class="form-check-label" for="infinityPool">
-                                        <div class="radio-img"><?= renderImg("infinity-pool.png", "icons") ?></div>
+                                        <div class="radio-img infinity-pool"></div>
                                         <div>Infinity Pool</div>
                                     </label>
                                 </div>
                                 <div class="col-3 col-md col-lg-3 col-xl">
                                     <input class="form-check-input" type="radio" name="poolType" value="Architectural Pool" id="architecturalPool">
                                     <label class="form-check-label" for="architecturalPool">
-                                        <div class="radio-img"><?= renderImg("architectural-pool.png", "icons") ?></div>
+                                        <div class="radio-img architectural-pool"></div>
                                         <div>Architectural Pool</div>
                                     </label>
                                 </div>
                                 <div class="col-3 col-md col-lg-3 col-xl">
                                     <input class="form-check-input" type="radio" name="poolType" value="Indoor Pool" id="indoorPool">
                                     <label class="form-check-label" for="indoorPool">
-                                        <div class="radio-img"><?= renderImg("indoor-pool.png", "icons") ?></div>
+                                        <div class="radio-img indoor-pool"></div>
                                         <div>Indoor Pool</div>
                                     </label>
                                 </div>
                                 <div class="col-3 col-md col-lg-3 col-xl">
                                     <input class="form-check-input" type="radio" name="poolType" value="In-Ground Pool" id="ingroundPool">
                                     <label class="form-check-label" for="ingroundPool">
-                                        <div class="radio-img"><?= renderImg("in-ground-pool.png", "icons") ?></div>
+                                        <div class="radio-img in-ground-pool"></div>
                                         <div>In-Ground Pool</div>
                                     </label>
                                 </div>
                                 <div class="col-3 col-md col-lg-3 col-xl">
                                     <input class="form-check-input" type="radio" name="poolType" value="Above Ground Pool" id="aboveGroundPool">
                                     <label class="form-check-label" for="aboveGroundPool">
-                                        <div class="radio-img"><?= renderImg("above-ground-pool.png", "icons") ?></div>
+                                        <div class="radio-img above-ground-pool"></div>
                                         <div>Above Ground Pool</div>
                                     </label>
                                 </div>
                                 <div class="col-3 col-md col-lg-3 col-xl">
                                     <input class="form-check-input" type="radio" name="poolType" value="Others" id="othersPool">
                                     <label class="form-check-label" for="othersPool">
-                                        <div class="radio-img"><?= renderImg("others.png", "icons") ?></div>
+                                        <div class="radio-img others"></div>
                                         <div>Others</div>
                                     </label>
                                 </div>

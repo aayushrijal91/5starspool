@@ -330,24 +330,83 @@ section.form {
                 border-bottom: 1px solid $light;
             }
 
-            input[type="radio"]:checked + label {
-                background-color: $white;
-                color: $primary;
-                border: 1px solid $dark;
-                border-radius: 3px;
-                overflow: hidden;
-            }
-
-            label:hover {
-                background-color: #d9d9d92e;
-            }
-
             .radio-img {
                 height: 48px;
                 width: auto;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                transition: 0.1s ease-in-out;
+
+                &.lap-pool {
+                    background: imgUrl("lap-pool.png", "icons") center;
+                }
+
+                &.plunge-pool {
+                    background: imgUrl("plunge-pool.png", "icons") center;
+                }
+
+                &.infinity-pool {
+                    background: imgUrl("infinity-pool.png", "icons") center;
+                }
+
+                &.architectural-pool {
+                    background: imgUrl("architectural-pool.png", "icons") center;
+                }
+
+                &.indoor-pool {
+                    background: imgUrl("indoor-pool.png", "icons") center;
+                }
+
+                &.in-ground-pool {
+                    background: imgUrl("in-ground-pool.png", "icons") center;
+                }
+
+                &.above-ground-pool {
+                    background: imgUrl("above-ground-pool.png", "icons") center;
+                }
+
+                &.others {
+                    background: imgUrl("others.png", "icons") center;
+                }
+            }
+
+            input[type="radio"]:checked + label {
+                background-color: $white;
+                color: $primary;
+                border: 1px solid $dark;
+                border-radius: 3px;
+                overflow: hidden;
+
+                .radio-img {
+                    &.plunge-pool {
+                        background: imgUrl("plunge-pool-highlighted.png", "icons") center;
+                    }
+
+                    &.infinity-pool {
+                        background: imgUrl("infinity-pool-highlighted.png", "icons") center;
+                    }
+
+                    &.indoor-pool {
+                        background: imgUrl("indoor-pool-highlighted.png", "icons") center;
+                    }
+
+                    &.in-ground-pool {
+                        background: imgUrl("in-ground-pool-highlighted.png", "icons") center;
+                    }
+
+                    &.above-ground-pool {
+                        background: imgUrl("above-ground-pool-highlighted.png", "icons") center;
+                    }
+
+                    &.others {
+                        background: imgUrl("others-highlighted.png", "icons") center;
+                    }
+                }
+            }
+
+            label:hover {
+                background-color: #d9d9d92e;
             }
         }
     }
