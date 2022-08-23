@@ -18,7 +18,7 @@ header {
             padding: 375px 0 101px;
         }
 
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(xxl) {
             padding: 575px 0 101px;
         }
 
@@ -118,7 +118,7 @@ section.about {
         font-weight: 800;
         color: $primary;
 
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
             color: $white;
             text-align: center;
             padding-top: 34px;
@@ -159,7 +159,7 @@ section.services {
     background: linear-gradient(#1587b1 0 80%, rgba(0, 0, 0, 0) 80% 100%);
     padding-bottom: 80px;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
         padding-bottom: 123px;
     }
 
@@ -247,7 +247,7 @@ section.gallery {
     background: imgUrl("star-logo.png") left bottom;
     padding: 64px 0;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
         padding: 126px 0;
     }
 

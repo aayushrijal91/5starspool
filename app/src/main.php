@@ -59,19 +59,19 @@ include __DIR__ . '/header.php';
                 </div>
             </div>
             <div class="row justify-content-between align-items-center gy-4">
-                <div class="col-6 col-md-auto">
+                <div class="col-6 col-md-auto col-lg col-xl-auto ">
                     <?= renderImg("detail-badge.png", "lib", "badge-btn") ?>
                 </div>
-                <div class="col-6 col-md-auto">
+                <div class="col-6 col-md-auto col-lg col-xl-auto ">
                     <?= renderImg("experience-badge.png", "lib", "badge-btn") ?>
                 </div>
                 <div class="col-auto d-none d-lg-block">
                     <?= renderImg("view-more.png", "lib") ?>
                 </div>
-                <div class="col-6 col-md-auto">
+                <div class="col-6 col-md-auto col-lg col-xl-auto ">
                     <?= renderImg("australian-business.png", "lib", "badge-btn") ?>
                 </div>
-                <div class="col-6 col-md-auto">
+                <div class="col-6 col-md-auto col-lg col-xl-auto ">
                     <?= renderImg("master-builders.png", "lib", "badge-btn") ?>
                 </div>
             </div>
@@ -82,7 +82,7 @@ include __DIR__ . '/header.php';
 <section class="about">
     <div class="container">
         <div class="row gx-xxl-6 align-items-center align-items-xxl-start position-relative">
-            <div class="col-lg-7">
+            <div class="col-xl-7">
                 <?= renderImg("play-btn.png", "icons", "play-btn-xxl") ?>
 
                 <div class="laptop d-xxl-none">
@@ -90,22 +90,22 @@ include __DIR__ . '/header.php';
                     <?= renderImg("play-btn.png", "icons", "play-btn") ?>
                 </div>
             </div>
-            <div class="col-lg-5 py-xxl-10">
+            <div class="col-xl-5 py-xxl-10">
                 <h1 class="heroHeading">Only the best</h1>
-                <div class="h6 text-dark letter-spacing-01 fw-500 font-gilroy py-4 pe-xxl-7 text-center text-lg-start">
+                <div class="h6 text-dark letter-spacing-01 fw-500 font-gilroy py-4 pe-xxl-7 text-center text-xl-start">
                     We are passionate about making your tailored ideas a reality. This means we’re flexible, transparent and direct with our communication, working with you around the clock, and following up your every need.
                 </div>
-                <div class="row gx-3 pt-3 justify-content-center justify-content-lg-start">
-                    <div class="col-5">
+                <div class="row gx-3 pt-3 justify-content-center justify-content-xl-start">
+                    <div class="col-5 col-lg-3 col-xl-5">
                         <a href="#form" class="btn btn-dark-grey text-white rounded-0 h6 d-block py-2 py-md-3 font-gilroy fw-500">Get a quote</a>
                     </div>
-                    <div class="col-5">
+                    <div class="col-5 col-lg-3 col-xl-5">
                         <a href="#form" class="btn bordered border-dark-grey text-dark-grey rounded-0 h6 d-block py-2 py-md-3 font-gilroy fw-600">Give us a call</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row pt-5 pt-lg-0 gy-4">
+        <div class="row pt-5 pt-xl-0 gy-4">
             <div class="col-md-4">
                 <div class="cta">
                     <?= renderImg("consultation.png", "icons") ?>
@@ -133,7 +133,7 @@ include __DIR__ . '/header.php';
                 <div class="col-12">
                     <h1 class="text-uppercase fw-800 text-white py-3 letter-spacing-03">Explore our 5 star services</h1>
                 </div>
-                <div class="col-xl-6 pt-3 pt-md-4">
+                <div class="col-lg-8 col-xl-6 pt-3 pt-md-4">
                     <div class="h6 letter-spacing-01 text-white font-gilroy fw-500 line-height-2">We are passionate about making your tailored ideas a reality. This means we’re flexible, transparent and direct with our communication, working with you around the clock, and following up your every need.</div>
                 </div>
             </div>
@@ -183,17 +183,17 @@ include __DIR__ . '/header.php';
 <section class="guarantee">
     <div class="container">
         <div class="row justify-content-around gy-5 gy-md-0">
-            <div class="col-md-4 col-lg-3 text-center">
+            <div class="col-md-4 col-xl-3 text-center">
                 <?= renderImg("certified.png", "icons") ?>
                 <h1 class="text-white fw-800 py-3">100%</h1>
                 <div class="text-white h6 letter-spacing-01">satisfaction guarantee, using only Australian made products.</div>
             </div>
-            <div class="col-md-4 col-lg-3 text-center">
+            <div class="col-md-4 col-xl-3 text-center">
                 <?= renderImg("calendar.png", "icons") ?>
                 <h1 class="text-white fw-800 py-3 text-uppercase">15 Years</h1>
                 <div class="text-white h6 letter-spacing-01">First established as a small family business we are now one of the youngest and fastest growing builders in NSW</div>
             </div>
-            <div class="col-md-4 col-lg-3 text-center">
+            <div class="col-md-4 col-xl-3 text-center">
                 <?= renderImg("helmet.png", "icons") ?>
                 <h1 class="text-white fw-800 py-3 text-uppercase">Over 50</h1>
                 <div class="text-white h6 letter-spacing-01">Our dedicated team produce the highest quality finishes on all projects finalising over 50 builds a year.</div>
@@ -215,56 +215,56 @@ include __DIR__ . '/header.php';
                         <div class="col-12">
                             <label class="form-label">Please Choose What You're After</label>
                             <div class="row radio-toolbar g-0">
-                                <div class="col-3 col-md">
+                                <div class="col-3 col-md col-lg-3 col-xl">
                                     <input class="form-check-input" type="radio" name="poolType" value="Lap Pool" id="lapPool" checked>
                                     <label class="form-check-label" for="lapPool">
                                         <div class="radio-img"><?= renderImg("lap-pool.png", "icons") ?></div>
                                         <div>Lap Pool</div>
                                     </label>
                                 </div>
-                                <div class="col-3 col-md">
+                                <div class="col-3 col-md col-lg-3 col-xl">
                                     <input class="form-check-input" type="radio" name="poolType" value="Plunge Pool" id="plungePool">
                                     <label class="form-check-label" for="plungePool">
                                         <div class="radio-img"><?= renderImg("plunge-pool.png", "icons") ?></div>
                                         <div>Plunge Pool</div>
                                     </label>
                                 </div>
-                                <div class="col-3 col-md">
+                                <div class="col-3 col-md col-lg-3 col-xl">
                                     <input class="form-check-input" type="radio" name="poolType" value="Infinity Pool" id="infinityPool">
                                     <label class="form-check-label" for="infinityPool">
                                         <div class="radio-img"><?= renderImg("infinity-pool.png", "icons") ?></div>
                                         <div>Infinity Pool</div>
                                     </label>
                                 </div>
-                                <div class="col-3 col-md">
+                                <div class="col-3 col-md col-lg-3 col-xl">
                                     <input class="form-check-input" type="radio" name="poolType" value="Architectural Pool" id="architecturalPool">
                                     <label class="form-check-label" for="architecturalPool">
                                         <div class="radio-img"><?= renderImg("architectural-pool.png", "icons") ?></div>
                                         <div>Architectural Pool</div>
                                     </label>
                                 </div>
-                                <div class="col-3 col-md">
+                                <div class="col-3 col-md col-lg-3 col-xl">
                                     <input class="form-check-input" type="radio" name="poolType" value="Indoor Pool" id="indoorPool">
                                     <label class="form-check-label" for="indoorPool">
                                         <div class="radio-img"><?= renderImg("indoor-pool.png", "icons") ?></div>
                                         <div>Indoor Pool</div>
                                     </label>
                                 </div>
-                                <div class="col-3 col-md">
+                                <div class="col-3 col-md col-lg-3 col-xl">
                                     <input class="form-check-input" type="radio" name="poolType" value="In-Ground Pool" id="ingroundPool">
                                     <label class="form-check-label" for="ingroundPool">
                                         <div class="radio-img"><?= renderImg("in-ground-pool.png", "icons") ?></div>
                                         <div>In-Ground Pool</div>
                                     </label>
                                 </div>
-                                <div class="col-3 col-md">
+                                <div class="col-3 col-md col-lg-3 col-xl">
                                     <input class="form-check-input" type="radio" name="poolType" value="Above Ground Pool" id="aboveGroundPool">
                                     <label class="form-check-label" for="aboveGroundPool">
                                         <div class="radio-img"><?= renderImg("above-ground-pool.png", "icons") ?></div>
                                         <div>Above Ground Pool</div>
                                     </label>
                                 </div>
-                                <div class="col-3 col-md">
+                                <div class="col-3 col-md col-lg-3 col-xl">
                                     <input class="form-check-input" type="radio" name="poolType" value="others" id="othersPool">
                                     <label class="form-check-label" for="othersPool">
                                         <div class="radio-img"><?= renderImg("others.png", "icons") ?></div>
@@ -351,7 +351,7 @@ include __DIR__ . '/header.php';
             </div>
         </div>
         <div class="row justify-content-center justify-content-md-between pt-5 gy-5">
-            <div class="col-6 col-md col-lg-auto">
+            <div class="col-6 col-md col-xl-auto">
                 <div class="star-wrapper">
                     <div><?= renderImg("star-top.png", "icons") ?></div>
                     <?= renderImg("commitment.png", "icons", "floating-img") ?>
@@ -359,7 +359,7 @@ include __DIR__ . '/header.php';
                 </div>
                 <h4>Commitment</h4>
             </div>
-            <div class="col-6 col-md col-lg-auto">
+            <div class="col-6 col-md col-xl-auto">
                 <div class="star-wrapper">
                     <div><?= renderImg("star-top.png", "icons") ?></div>
                     <?= renderImg("professionalism.png", "icons", "floating-img") ?>
@@ -367,7 +367,7 @@ include __DIR__ . '/header.php';
                 </div>
                 <h4>Professionalism</h4>
             </div>
-            <div class="col-6 col-md col-lg-auto">
+            <div class="col-6 col-md col-xl-auto">
                 <div class="star-wrapper">
                     <div><?= renderImg("star-top.png", "icons") ?></div>
                     <?= renderImg("transparency.png", "icons", "floating-img") ?>
@@ -375,7 +375,7 @@ include __DIR__ . '/header.php';
                 </div>
                 <h4>Transparency</h4>
             </div>
-            <div class="col-6 col-md col-lg-auto">
+            <div class="col-6 col-md col-xl-auto">
                 <div class="star-wrapper">
                     <div><?= renderImg("star-top.png", "icons") ?></div>
                     <?= renderImg("seamless-delivery.png", "icons", "floating-img") ?>
@@ -383,7 +383,7 @@ include __DIR__ . '/header.php';
                 </div>
                 <h4>Seamless Delivery</h4>
             </div>
-            <div class="col-6 col-md col-lg-auto">
+            <div class="col-6 col-md col-xl-auto">
                 <div class="star-wrapper">
                     <div><?= renderImg("star-top.png", "icons") ?></div>
                     <?= renderImg("close-contact.png", "icons", "floating-img") ?>

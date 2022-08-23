@@ -45,7 +45,7 @@ $(() => {
                 }
             },
             {
-                breakpoint: 900,
+                breakpoint: 1100,
                 settings: {
                     slidesToShow: 2,
                     centerPadding: "10px",
