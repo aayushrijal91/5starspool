@@ -15,14 +15,14 @@ include __DIR__ . '/header.php';
                 <div class="col-12 col-md-auto pe-md-0">
                     <div class="row justify-content-center justify-content-lg-end align-items-center gx-0 gy-2 py-2">
                         <div class="col-auto pe-1 px-md-1">
-                            <a href="#form" class="btn btn-tertiary rounded-0 text-white py-2 h6 py-md-3 px-md-4">
+                            <a href="https://goo.gl/maps/rXE8EQKX3yBiCHEs6" target="_blank" class="btn btn-tertiary rounded-0 text-white py-2 h6 py-md-3 px-md-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                                     <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
                                 </svg>
                             </a>
                         </div>
                         <div class="col-auto px-1">
-                            <a href="" class="btn btn-tertiary rounded-0 text-white py-2 h6 py-md-3 px-md-4">
+                            <a href="mailto:<?= $admin_email ?>" class="btn btn-tertiary rounded-0 text-white py-2 h6 py-md-3 px-md-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
                                 </svg>
@@ -38,7 +38,7 @@ include __DIR__ . '/header.php';
                             </a>
                         </div>
                         <div class="col-12 col-md-auto d-md-none d-lg-block">
-                            <a href="" class="btn d-block btn-tertiary rounded-0 text-white py-2 h6 py-md-3 px-md-4">
+                            <a href="https://5stargrannyflats.com.au/" target="_blank" class="btn d-block btn-tertiary rounded-0 text-white py-2 h6 py-md-3 px-md-4">
                                 Click here to view 5 Star Granny Flats
                             </a>
                         </div>
@@ -55,7 +55,7 @@ include __DIR__ . '/header.php';
                     <div class="based-in-sydney">Are you based in Sydney?</div>
                 </div>
                 <div class="col col-md-auto">
-                    <a href="" class="btn text-tertiary-dark letter-spacing-03 fw-700 h3 get-quote-btn">Get a quote!</a>
+                    <a href="#form" class="btn text-tertiary-dark letter-spacing-03 fw-700 h3 get-quote-btn">Get a quote!</a>
                 </div>
             </div>
             <div class="row justify-content-between align-items-center gy-4">
@@ -100,7 +100,7 @@ include __DIR__ . '/header.php';
                         <a href="#form" class="btn btn-dark-grey text-white rounded-0 h6 d-block py-2 py-md-3 font-gilroy fw-500">Get a quote</a>
                     </div>
                     <div class="col-5 col-lg-3 col-xl-5">
-                        <a href="#form" class="btn bordered border-dark-grey text-dark-grey rounded-0 h6 d-block py-2 py-md-3 font-gilroy fw-600">Give us a call</a>
+                        <a href="tel:<?= $phone_number ?>" class="btn bordered border-dark-grey text-dark-grey rounded-0 h6 d-block py-2 py-md-3 font-gilroy fw-600">Give us a call</a>
                     </div>
                 </div>
             </div>
