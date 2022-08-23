@@ -290,11 +290,46 @@ section.form {
     }
 }
 
-footer {
-    font-size: 0.875rem;
-    background-color: #221f1f;
+section.promise {
+    padding: 80px 0;
+    background-color: $primary;
+    color: $white;
+    text-align: center;
 
+    .star-wrapper {
+        background-color: $white;
+        position: relative;
+
+        .floating-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.2s ease-in-out;
+        }
+
+        .star-bottom {
+            position: relative;
+        }
+
+        &:hover {
+            .floating-img {
+                transform: translateY(-20px);
+            }
+        }
+    }
+}
+
+section.other-services {
+    padding: 68px 0;
+}
+
+footer {
+    padding: 37px 0;
+    font-size: 1rem;
+    font-family: $font-gilroy;
+    font-weight: 500;
+    
     @include media-breakpoint-down(sm) {
-        font-size: 0.61rem;
+        font-size: 0.875rem;
     }
 }

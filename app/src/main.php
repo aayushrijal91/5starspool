@@ -338,4 +338,67 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
+<section class="promise">
+    <div class="container">
+        <h2 class="pb-2">The Five Star Promise</h2>
+        <div class="row justify-content-center py-4">
+            <div class="col-xl-10">
+                <div class="h6">With a considerable amount of industry experience, our builders use tried and tested methods and materials to maintain the highest quality work, and customer satisfaction standards.</div>
+            </div>
+        </div>
+        <div class="row justify-content-between pt-5">
+            <div class="col-auto">
+                <div class="star-wrapper">
+                    <div><?= renderImg("star-top.png", "icons") ?></div>
+                    <?= renderImg("commitment.png", "icons", "floating-img") ?>
+                    <div class="star-bottom"><?= renderImg("star-bottom.png", "icons") ?></div>
+                </div>
+                <h4>Commitment</h4>
+            </div>
+            <div class="col-auto">
+                <div class="star-wrapper">
+                    <div><?= renderImg("star-top.png", "icons") ?></div>
+                    <?= renderImg("professionalism.png", "icons", "floating-img") ?>
+                    <div class="star-bottom"><?= renderImg("star-bottom.png", "icons") ?></div>
+                </div>
+                <h4>Professionalism</h4>
+            </div>
+            <div class="col-auto">
+                <div class="star-wrapper">
+                    <div><?= renderImg("star-top.png", "icons") ?></div>
+                    <?= renderImg("transparency.png", "icons", "floating-img") ?>
+                    <div class="star-bottom"><?= renderImg("star-bottom.png", "icons") ?></div>
+                </div>
+                <h4>Transparency</h4>
+            </div>
+            <div class="col-auto">
+                <div class="star-wrapper">
+                    <div><?= renderImg("star-top.png", "icons") ?></div>
+                    <?= renderImg("seamless-delivery.png", "icons", "floating-img") ?>
+                    <div class="star-bottom"><?= renderImg("star-bottom.png", "icons") ?></div>
+                </div>
+                <h4>Seamless Delivery</h4>
+            </div>
+            <div class="col-auto">
+                <div class="star-wrapper">
+                    <div><?= renderImg("star-top.png", "icons") ?></div>
+                    <?= renderImg("close-contact.png", "icons", "floating-img") ?>
+                    <div class="star-bottom"><?= renderImg("star-bottom.png", "icons") ?></div>
+                </div>
+                <h4>Close Contact</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="other-services">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-auto"><?= renderImg("5-star-pools.png","logo") ?></div>
+            <div class="col-auto"><?= renderImg("5-star-builders.png","logo") ?></div>
+            <div class="col-auto"><?= renderImg("5-star-granny-flat.png","logo") ?></div>
+        </div>
+    </div>
+</section>
+
 <?php include __DIR__ . '/footer.php'; ?>
