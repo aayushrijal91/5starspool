@@ -36,5 +36,15 @@ $(() => {
         cssEase: "linear",
         infinite: true,
         dots: true,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: "10px",
+                    dots: false,
+                }
+            }]
     });
 })
