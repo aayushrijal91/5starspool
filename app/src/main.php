@@ -38,8 +38,8 @@ include __DIR__ . '/header.php';
                             </a>
                         </div>
                         <div class="col-12 col-md-auto d-md-none d-lg-block">
-                            <a href="https://5stargrannyflats.com.au/" target="_blank" class="btn d-block btn-tertiary rounded-0 text-white py-2 h6 py-md-3 px-md-4 fw-700">
-                                Click here to view 5 Star Granny Flats
+                            <a href="https://5starbuilders.com.au/" target="_blank" class="btn d-block btn-tertiary rounded-0 text-white py-2 h6 py-md-3 px-md-4 fw-700">
+                                Click here to view 5 Star Builders
                             </a>
                         </div>
                     </div>
