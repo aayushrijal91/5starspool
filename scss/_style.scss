@@ -92,6 +92,8 @@ section.about {
         position: absolute;
         top: 31%;
         left: 28%;
+        background: none;
+        border: 0;
 
         @include media-breakpoint-down(xxl) {
             display: none;
@@ -151,6 +153,32 @@ section.about {
 
         @include media-breakpoint-up(md) {
             padding: 120px 0;
+        }
+    }
+
+    .modal {
+        .modal-content {
+            background: transparent;
+            border: none;
+            .modal-header {
+                border: none;
+            }
+        }
+        .modal-dialog {
+            max-width: 934px;
+
+            .video-modal {
+                width: 900px;
+                height: 506px;
+
+                @include media-breakpoint-down(lg) {
+                    width: 100%;
+                }
+                
+                @include media-breakpoint-down(md) {
+                    height: 200px;
+                }
+            }
         }
     }
 }

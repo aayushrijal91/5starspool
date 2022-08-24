@@ -34,11 +34,11 @@ include __DIR__ . '/header.php';
                                     <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
                                     <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                                 </svg>
-                                <div class="ps-2"><?= $phone_number ?></div>
+                                <div class="ps-2 fw-700"><?= $phone_number ?></div>
                             </a>
                         </div>
                         <div class="col-12 col-md-auto d-md-none d-lg-block">
-                            <a href="https://5stargrannyflats.com.au/" target="_blank" class="btn d-block btn-tertiary rounded-0 text-white py-2 h6 py-md-3 px-md-4">
+                            <a href="https://5stargrannyflats.com.au/" target="_blank" class="btn d-block btn-tertiary rounded-0 text-white py-2 h6 py-md-3 px-md-4 fw-700">
                                 Click here to view 5 Star Granny Flats
                             </a>
                         </div>
@@ -80,14 +80,24 @@ include __DIR__ . '/header.php';
 </header>
 
 <section class="about">
+    <!-- Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe class="video-modal" src="https://www.youtube.com/embed/91kIErQow7A" title="Pool Construction Putney" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row gx-xxl-6 align-items-center align-items-xxl-start position-relative">
             <div class="col-xl-7">
-                <?= renderImg("play-btn.png", "icons", "play-btn-xxl") ?>
+                <button type="button" class="play-btn-xxl" data-bs-toggle="modal" data-bs-target="#videoModal"><?= renderImg("play-btn.png", "icons") ?></button>
 
                 <div class="laptop d-xxl-none">
                     <?= renderImg("laptop.png", "lib", "w-100") ?>
-                    <?= renderImg("play-btn.png", "icons", "play-btn") ?>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoModal"><?= renderImg("play-btn.png", "icons", "play-btn") ?></button>
                 </div>
             </div>
             <div class="col-xl-5 py-xxl-10">

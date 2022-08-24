@@ -59,4 +59,11 @@ $(() => {
                 }
             }]
     });
-})
+});
+
+$("#exampleModalCenter").click(function () {
+    $('#video').each(function (index) {
+        $(this).attr('src', $(this).attr('src'));
+        return false;
+    });
+});
