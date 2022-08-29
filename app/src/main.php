@@ -66,7 +66,7 @@ include __DIR__ . '/header.php';
                     <?= renderImg("experience-badge.png", "lib", "badge-btn") ?>
                 </div>
                 <div class="col-auto d-none d-lg-block">
-                    <?= renderImg("view-more.png", "lib") ?>
+                    <?= renderImg("view-more.gif", "lib", "view-more-arrow") ?>
                 </div>
                 <div class="col-6 col-md-auto col-lg col-xl-auto ">
                     <?= renderImg("australian-business.png", "lib", "badge-btn") ?>
