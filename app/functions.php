@@ -2,10 +2,10 @@
 include __DIR__ . '/env.php';
 
 $site = "5 Star Pools";
-$phone_number = "1300 016 659";
-$admin_email = 'arijal@aiims.com.au';
+$phone_number = "1300 495 432";
+$admin_email = 'anthony@5starbuilders.com.au';
 $bcc_email = "";
-$no_reply_email = 'info@website.com.au';
+$no_reply_email = 'info@5starpools.com.au';
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;
 

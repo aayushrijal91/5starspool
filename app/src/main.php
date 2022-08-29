@@ -118,20 +118,20 @@ include __DIR__ . '/header.php';
         <div class="row pt-5 pt-xl-0 gy-4">
             <div class="col-md-4">
                 <div class="cta">
-                    <?= renderImg("consultation.png", "icons") ?>
-                    <h4 class="text-primary pt-4">Free Onsite Consultations</h4>
+                    <div class="cta-img consultation"></div>
+                    <h4 class="pt-4">Free Onsite Consultations</h4>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="cta">
-                    <?= renderImg("assurance.png", "icons") ?>
-                    <h4 class="text-primary pt-4">Unbeatable Quality Assurance</h4>
+                    <div class="cta-img assurance"></div>
+                    <h4 class="pt-4">Unbeatable Quality<br> Assurance</h4>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="cta">
-                    <?= renderImg("get-started.png", "icons") ?>
-                    <h4 class="text-primary pt-4">Ready To Get Started? Book a consult now</h4>
+                    <div class="cta-img get-started"></div>
+                    <h4 class="pt-4">Ready To Get Started? Book a consult now</h4>
                 </div>
             </div>
         </div>
@@ -176,16 +176,20 @@ include __DIR__ . '/header.php';
 <section class="gallery">
     <div class="container">
         <h1 class="letter-spacing-03 fw-800 text-uppercase text-primary pb-5 pb-md-8">Pool Construction Gallery</h1>
-        <div class="row justify-content-center g-2 g-md-4">
-            <div class="col-6 col-lg-4"><?= renderImg("gallery-1.jpg", "lib") ?></div>
-            <div class="col-6 col-lg-4"><?= renderImg("gallery-2.jpg", "lib") ?></div>
-            <div class="col-6 col-lg-4"><?= renderImg("gallery-3.jpg", "lib") ?></div>
-            <div class="col-6 col-lg-4"><?= renderImg("gallery-4.jpg", "lib") ?></div>
-            <div class="col-6 col-lg-4"><?= renderImg("gallery-5.jpg", "lib") ?></div>
-            <div class="col-6 col-lg-4"><?= renderImg("gallery-6.jpg", "lib") ?></div>
-            <div class="col-6 col-lg-4"><?= renderImg("gallery-7.jpg", "lib") ?></div>
-            <div class="col-6 col-lg-4"><?= renderImg("gallery-8.jpg", "lib") ?></div>
-            <div class="col-6 col-lg-4"><?= renderImg("gallery-9.jpg", "lib") ?></div>
+        <div class="row justify-content-center g-2 g-md-4 py-2 py-md-3 gallery-wrapper">
+            <div class="col-6 col-lg"><?= renderImg("gallery-1.jpg", "lib") ?></div>
+            <div class="col-6 col-lg"><?= renderImg("gallery-2.jpg", "lib") ?></div>
+            <div class="col col-lg"><?= renderImg("gallery-3.jpg", "lib") ?></div>
+        </div>
+        <div class="row justify-content-center g-2 g-md-4 py-2 py-md-3 gallery-wrapper">
+            <div class="col-6 col-lg"><?= renderImg("gallery-4.jpg", "lib") ?></div>
+            <div class="col-6 col-lg"><?= renderImg("gallery-5.jpg", "lib") ?></div>
+            <div class="col col-lg"><?= renderImg("gallery-6.jpg", "lib") ?></div>
+        </div>
+        <div class="row justify-content-center g-2 g-md-4 py-2 py-md-3 gallery-wrapper">
+            <div class="col-6 col-lg"><?= renderImg("gallery-7.jpg", "lib") ?></div>
+            <div class="col-6 col-lg"><?= renderImg("gallery-8.jpg", "lib") ?></div>
+            <div class="col col-lg"><?= renderImg("gallery-9.jpg", "lib") ?></div>
         </div>
     </div>
 </section>

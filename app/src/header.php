@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="./assets/css/main.css?v=0.1">
 
 	<!-- Recaptcha Here -->
-	<!-- <script src="https://www.google.com/recaptcha/api.js?render=<?= $recaptcha_client_secret ?>"></script>
+	<script src="https://www.google.com/recaptcha/api.js?render=<?= $recaptcha_client_secret ?>"></script>
 	<script>
 		grecaptcha.ready(function() {
 			grecaptcha.execute('<?= $recaptcha_client_secret ?>', {
@@ -19,7 +19,7 @@
 				document.getElementById('recaptchaResponse').value = token;
 			});
 		});
-	</script> -->
+	</script>
 
 	<!-- Google Tag Manager -->
 
@@ -42,7 +42,7 @@
 	<!-- End Google Tag Manager -->
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46094308-46"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46094308-68"></script>
 
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -53,7 +53,7 @@
 
 		gtag('js', new Date());
 		gtag('config', 'AW-699770702');
-		gtag('config', 'UA-46094308-46');
+		gtag('config', 'UA-46094308-68');
 	</script>
 
 	<!-- Google tag (gtag.js) -->
